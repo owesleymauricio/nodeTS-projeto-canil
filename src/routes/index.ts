@@ -1,15 +1,15 @@
 import { Router } from "express";
-import * as pageController from "../controllers/pageController";
-import * as searchController from "../controllers/searchController";
+import * as PageController from "../controllers/pageController";
+import * as SearchController from "../controllers/searchController";
 
 
 const router = Router();
 
-router.get('/', pageController.home);
-router.get('/dogs', pageController.dogs);
-router.get('/cats', pageController.cats);
-router.get('/fishes', pageController.fishes);
+router.get('/', PageController.home);
+router.get('/dogs', PageController.dogs);
+router.get('/cats', PageController.cats);
+router.get('/fishes', PageController.fishes);
 
-router.get('/search', searchController.search);
+router.get('/search', SearchController.search);
 
 export default router;
